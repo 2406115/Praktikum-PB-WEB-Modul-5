@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi mode gelap */
+}
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 5px;
+}
+
+.profil {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profil img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 180px;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* --- KODE TAMBAHAN UNTUK FITUR JS DOM --- */
+
+.tersembunyi {
+    display: none;
+}
+
+/* Gaya untuk Aside (Info Tambahan) */
+aside {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #0f5132;
+}
+
+/* Gaya untuk Artikel dari JavaScript */
+article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #1f4e79;
+}
+
+article button {
+    background-color: #dc3545; /* Warna merah untuk hapus */
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+article button:hover {
+    background-color: #c82333;
+}
+
+/* Gaya untuk Form Tambah Artikel */
+#form-tambah-artikel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-tambah-artikel input,
+#form-tambah-artikel textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+#form-tambah-artikel textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#btn-tambah {
+    background-color: #28a745; /* Warna hijau untuk tambah */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#btn-tambah:hover {
+    background-color: #218838;
+}
+
+
+/* --- KODE UNTUK MODE GELAP (DARK MODE) --- */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #2c2c2c; 
+    color: #e0e0e0;
+}
+
+body.dark-mode h2,
+body.dark-mode article h3 {
+    color: #66b2ff;
+    border-bottom-color: #66b2ff;
+}
+
+body.dark-mode td {
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode #form-tambah-artikel input,
+body.dark-mode #form-tambah-artikel textarea {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* --- EFEK HOVER (MODUL 5) --- */
+.artikel-hover {
+    background-color: #eef4fb;
+}
+
+/* Saat mode gelap, berikan warna hover yang sesuai */
+body.dark-mode .artikel-hover {
+    background-color: #3b3b3b;
+}
+
+/* --- GAYA FORM KOMENTAR (MODUL 5) --- */
+#form-komentar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-komentar input,
+#form-komentar textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+#form-komentar button,
+#btn-hapus-semua {
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#daftar-komentar {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#daftar-komentar li {
+    background: #e9ecef;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark-mode #daftar-komentar li {
+    background: #444;
+    color: #e0e0e0;
+}
